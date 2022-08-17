@@ -5,7 +5,7 @@ import Home from './Home'
 import Services from './Services'
 import About from './About'
 import Work from './Work'
-
+import Footer from './Footer'
 
 function App(){
 
@@ -16,6 +16,7 @@ function App(){
       <Services></Services>
       <About></About>
       <Work></Work>
+      <Footer></Footer>
     </>
   )
 }
