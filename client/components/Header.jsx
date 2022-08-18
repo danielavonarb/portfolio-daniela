@@ -1,15 +1,11 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
-
 function Header(){
   return (
     <header>
-
       <div className = "logo">
         <img src = "images/devjane.png" id = "logo" alt=""></img>
       </div>
-
       <button className = "nav-toggle" aria-label = "toggle navigation">
         <span className = "hamburger"></span>
       </button>
