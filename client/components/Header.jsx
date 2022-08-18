@@ -1,12 +1,16 @@
 import React from 'react'
 
 function Header(){
+
+  function handleClick(){
+
+  }
   return (
     <header>
       <div className = "logo">
         <img src = "images/devjane.png" id = "logo" alt=""></img>
       </div>
-      <button className = "nav-toggle" aria-label = "toggle navigation">
+      <button onClick={handleClick} className = "nav-toggle" aria-label = "toggle navigation">
         <span className = "hamburger"></span>
       </button>
       <nav className = "nav">
@@ -22,3 +26,4 @@ function Header(){
 }
 
 export default Header
+
