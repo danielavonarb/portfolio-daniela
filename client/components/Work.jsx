@@ -3,9 +3,10 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
-import projectsData from '../data/projects'
+// import projectsData from '../data/projects'
 
-function Work(){
+function Work(props){
+  const projectsData = props.projectsData
 
   // const {id} = useParams()
   // const {image} = projectsData
@@ -20,7 +21,8 @@ function Work(){
           {projectsData.map((project) => {
             return (
               <div className='portfolio__item' key={project.id}>
-               <img className='portfolio__img' src={"../images/" + project.image}/>
+                <Link to={`/projects/${project.id}`}><img className='portfolio__img' src={"../images/" + project.image}/></Link>
+               {/* <img className='portfolio__img' src={"../images/" + project.image}/> */}
               </div>
             )
           })}
