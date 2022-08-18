@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
 
 import Header from './Header'
 import Home from './Home'
@@ -11,12 +12,14 @@ function App(){
 
   return (
     <>
-      <Header></Header>
-      <Home></Home>
-      <Services></Services>
-      <About></About>
-      <Work></Work>
-      <Footer></Footer>
+      <Header />
+   
+        <Home />
+        <Services />
+        <About />
+        <Work />
+  
+      <Footer />
     </>
   )
 }
