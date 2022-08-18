@@ -16,21 +16,11 @@ function App(){
   return (
     <>
       <Header />
-   
-      
-        {/* <Home />
-        <Services />
-        <About />
-        <Work projectsData={projectsData} /> */}
-   
         <Routes>
           <Route path='/' element={<div><Home/><Services/><About/><Work projectsData={projectsData}/></div>} />
           <Route path='/projects/:id' element={<Project projectsData ={projectsData} />} />
         </Routes>
-
-
       <Footer />
-
     </>
   )
 }
