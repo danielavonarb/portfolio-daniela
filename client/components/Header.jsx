@@ -4,12 +4,15 @@ function Header(){
   const [navbarOpen, setNavbarOpen] = useState(false)
 
 
-  function handleToggle(event){
+  function handleToggle(){
     setNavbarOpen(!navbarOpen)
     // event.currentTarget.classList.toggle('nav-open');
-    document.body.classList.toggle('nav-open')
-    
-    
+    document.body.classList.toggle('nav-open')   
+  }
+
+  function handleClick(){
+    setNavbarOpen(!navbarOpen)
+    document.body.classList.remove('nav-open')  
 
   }
   return (
@@ -25,10 +28,10 @@ function Header(){
       {/* <nav className = {navbarOpen ? 'nav-open-nav' : 'nav'}> */}
       <nav className = 'nav'>
         <ul className = "nav__list">
-          <li className = "nav__item"><a href = "#home" className = "nav__link">Home</a></li>
-          <li className = "nav__item"><a href = "#services" className = "nav__link">My Services</a></li>
-          <li className = "nav__item"><a href = "#about" className = "nav__link">About Me</a></li>
-          <li className = "nav__item"><a href = "#work" className = "nav__link">My Work</a></li>
+          <li className = "nav__item"><a onClick={handleClick} href = "#home" className = "nav__link">Home</a></li>
+          <li className = "nav__item"><a onClick={handleClick} href = "#services" className = "nav__link">My Services</a></li>
+          <li className = "nav__item"><a onClick={handleClick} href = "#about" className = "nav__link">About Me</a></li>
+          <li className = "nav__item"><a onClick={handleClick} href = "#work" className = "nav__link">My Work</a></li>
         </ul>
       </nav>
     </header>
@@ -38,21 +41,6 @@ function Header(){
 
 export default Header
 
-// onClick={handleToggle}>{navbarOpen ? "Close" : "Open"}
-// <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>...</ul>
-
-// <NavLink
-//   to={link.path}
-//   activeClassName="active-link"
-//   onClick={() => closeMenu()}
-//   exact
-// >
-//   {link.text}
-// </NavLink>
-
-// const closeMenu = () => {
-//   setNavbarOpen(false)
-// }
 
 
 
