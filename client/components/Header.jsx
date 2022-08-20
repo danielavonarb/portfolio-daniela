@@ -28,10 +28,10 @@ function Header(){
       {/* <nav className = {navbarOpen ? 'nav-open-nav' : 'nav'}> */}
       <nav className = 'nav'>
         <ul className = "nav__list">
-          <li className = "nav__item"><a onClick={handleClick} href = "#home" className = "nav__link">Home</a></li>
-          <li className = "nav__item"><a onClick={handleClick} href = "#services" className = "nav__link">My Services</a></li>
-          <li className = "nav__item"><a onClick={handleClick} href = "#about" className = "nav__link">About Me</a></li>
-          <li className = "nav__item"><a onClick={handleClick} href = "#work" className = "nav__link">My Work</a></li>
+          <li className = "nav__item"><a onClick={handleClick} href = "/#home" className = "nav__link">Home</a></li>
+          <li className = "nav__item"><a onClick={handleClick} href = "/#experience" className = "nav__link">Experience</a></li>
+          <li className = "nav__item"><a onClick={handleClick} href = "/#about" className = "nav__link">About Me</a></li>
+          <li className = "nav__item"><a onClick={handleClick} href = "/#work" className = "nav__link">My Work</a></li>
         </ul>
       </nav>
     </header>
