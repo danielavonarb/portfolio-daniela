@@ -316,7 +316,32 @@ header{
         min-width: 250px;
         position: relative;
         z-index: 2;
-    }    
+    }
+    
+   .intro__img__link{
+      grid-area: img;
+      min-width: 250px;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      transition: 
+      transform 750ms cubic-bezier(.5, 0, .5, 1),
+      opacity 250ms linear;
+     
+
+  }
+
+  .intro__img__link:focus {
+    position: relative;
+    z-index: 2;
+   
+}
+
+.intro__img__link:hover,
+.intro__img__link:focus {
+    transform: scale(1.2);
+    opacity: .5;
+}
     
     .section__subtitle--intro {
         align-self: start;

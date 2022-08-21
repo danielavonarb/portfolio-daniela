@@ -1,36 +1,51 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import { useParams } from 'react-router-dom'
 
 function Project(props){
   const projectsData = props.projectsData
+ 
 
   const {id} = useParams()
 
   const project = projectsData.find((project) => id == project.id)
   const paragraphs = project.paragraphs
+  const images = project.images
+  const [index, setIndex] = useState(0)
+
+function clickHandlerPrev(){
+  const isFirstSlide = index === 0
+  const newIndex = isFirstSlide ? images.length - 1 : index - 1
+  setIndex(newIndex)
+}
+
+function clickHandlerNext(){
+  const isLastSlide = index === images.length - 1
+  const newIndex = isLastSlide ? 0 : index + 1
+  setIndex(newIndex)
+}
 
   return (
     <>
     <section className = "intro">
       <h1 className ="section__title section__title--intro"><a href={project.link}>{project.title}</a></h1>
-      <p class = "section__subtitle section__subtitle--intro">{project.subtitle}</p>
-      <img src={"../images/" + project.image} class = "intro__img" id = "indiv_portfolio_img" alt = ""></img>
+      <p className = "section__subtitle section__subtitle--intro">{project.subtitle}</p>
+      <a className='intro__img__link' href={project.link}><img src={"../images/" + project.image} className = "intro__img" id = "indiv_portfolio_img" alt = ""></img></a>
     </section>
 
-    <div class="portfolio-item-individual">
+    <div className="portfolio-item-individual">
       {paragraphs.map((p) => {
         return (
           <p>{p}</p>
         )
       })}
 
-      <div class = "carousel">
-        <button class = "carousel__button--prev">Prev</button>
-        <div class = "carousel__track-container">
-          <img class = "carousel__track__slide" src={"../images/" + project.image} alt="" />
+      <div className = "carousel">
+        <button onClick={clickHandlerPrev} className = "carousel__button--prev">Prev</button>
+        <div className = "carousel__track-container">
+          <img className = "carousel__track__slide" src={"../images/" + project.images[index]} alt="" />
         </div>
-        <button class = "carousel__button--next">Next</button>
+        <button onClick={clickHandlerNext} className = "carousel__button--next">Next</button>
       </div>
 
     </div>

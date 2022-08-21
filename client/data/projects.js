@@ -1,7 +1,8 @@
 export default [
   {
     id: 1,
-    image: 'portfolio-01.jpg',
+    image: 'bookexchange.png',
+    images: ['portfolio-01.jpg', 'portfolio-02.jpg'],
     title: 'The Book Exchange',
     subtitle: 'Final Project',
     paragraphs: [
