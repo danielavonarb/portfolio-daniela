@@ -8,17 +8,22 @@ function Project(props){
   const {id} = useParams()
 
   const project = projectsData.find((project) => id == project.id)
+  const paragraphs = project.paragraphs
 
   return (
     <>
     <section className = "intro">
-      <h1 className ="section__title section__title--intro">{project.title}</h1>
+      <h1 className ="section__title section__title--intro"><a href={project.link}>{project.title}</a></h1>
       <p class = "section__subtitle section__subtitle--intro">{project.subtitle}</p>
       <img src={"../images/" + project.image} class = "intro__img" id = "indiv_portfolio_img" alt = ""></img>
     </section>
 
     <div class="portfolio-item-individual">
-      <p>{project.paragraphs}</p>
+      {paragraphs.map((p) => {
+        return (
+          <p>{p}</p>
+        )
+      })}
 
       <div class = "carousel">
         <button class = "carousel__button--prev">Prev</button>
@@ -28,7 +33,6 @@ function Project(props){
         <button class = "carousel__button--next">Next</button>
       </div>
 
-      <h3><a href={project.link}>{project.title}</a></h3>
     </div>
     </>
   )
