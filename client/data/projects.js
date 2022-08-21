@@ -1,10 +1,14 @@
 export default [
   {
     id: 1,
-    image: 'portfolio-01.jpg',
+    image: 'bookexchange.png',
+    images: ['portfolio-01.jpg', 'portfolio-02.jpg'],
     title: 'The Book Exchange',
     subtitle: 'Final Project',
-    paragraphs: ['Bla Bla Bla.'],
+    paragraphs: [
+      'For my final group project our team built a book exchange app using react/redux. It was a great experience to build a full-stack app from scratch in less than a week. I was the Vibes Watcher during this week and created a safe and fun space for the team.',
+      'I am so proud of this project and the team especially! We had so much fun building this app and focused a lot on our well-being. We looked out for each other and made sure that each team member is meeting their learning objectives.',
+    ],
     link: 'https://the-book-exchange-mako.herokuapp.com/',
   },
   {
