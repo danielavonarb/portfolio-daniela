@@ -304,7 +304,7 @@ header{
      
 
   }
-
+/* 
   .intro__img__link:focus {
     position: relative;
     z-index: 2;
@@ -315,7 +315,7 @@ header{
 .intro__img__link:focus {
     transform: scale(1.2);
     opacity: .5;
-}
+} */
     
     .section__subtitle--intro {
         align-self: start;
@@ -525,6 +525,16 @@ header{
     object-fit: contain;
 }
 
+.project-link{
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+
+.project-link:hover {
+    opacity: .7;
+    text-decoration: underline;
+}
+
 /* Carousel styles */
 
 .carousel{
@@ -562,6 +572,27 @@ header{
     top: 50%;
     transform: translateY(-50%);
     right: -60px;
+}
+
+.back-btn {
+  text-align: center;
+  padding: .5em 2.5em;
+  margin: 50em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+
+
+}
+
+.back-btn:hover {
+  transform: scale(1.1);
 }
 
 /************ Animation Styles ************/

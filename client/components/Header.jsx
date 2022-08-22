@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 function Header(){
   const [navbarOpen, setNavbarOpen] = useState(false)
@@ -18,9 +18,6 @@ function Header(){
   return (
   
     <header className = {navbarOpen ? 'non_sticky' : null}>
-      <div className = "logo">
-        <img src = "images/devjane.png" id = "logo" alt=""></img>
-      </div>
       <button onClick={handleToggle} className = "nav-toggle" aria-label = "toggle navigation">
       {/* <button onClick={handleToggle} className={navbarOpen ? 'nav-open-toggle' : 'nav-toggle'}> */}
         <span className = "hamburger"></span>
