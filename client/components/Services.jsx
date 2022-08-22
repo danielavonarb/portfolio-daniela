@@ -13,8 +13,9 @@ function Services(){
             methodology.</p>
           <p>During the bootcamp I spent over 600 hours working on a tech stack and developed skills through daily code challenges, pair-programming and contributing to weekly group
             projects. </p>
-          <p>Discovered the power of Human Skills and how they can transform teams and culture in record time
+          <p>I discovered the power of Human Skills and how they can transform teams and culture in record time
             by creating an environment with high levels of psychological safety.</p>
+          <p>I wrote a blog post about my reflections: <a className='link' target="_blank" href='https://www.linkedin.com/pulse/my-non-technical-dev-academy-aotearoa-bootcamp-daniela-von-arb/?trackingId=oc%2BKx6pMQNGlKoTOZ0VaBg%3D%3D'><strong>click here</strong></a></p>
         </div>
         <div className = "service">
           <h3>Skills</h3>

@@ -41,11 +41,11 @@ function clickHandlerNext(){
       })}
 
       <div className = "carousel">
-        <button onClick={clickHandlerPrev} className = "carousel__button--prev">Prev</button>
+        <button onClick={clickHandlerPrev} className = "carousel__button--prev">❰</button>
         <div className = "carousel__track-container">
           <img className = "carousel__track__slide" src={"../images/" + project.images[index]} alt="" />
         </div>
-        <button onClick={clickHandlerNext} className = "carousel__button--next">Next</button>
+        <button onClick={clickHandlerNext} className = "carousel__button--next">❱</button>
       </div>
         {/* <a href = "/#work" className = "back-btn">Back</a> */}
       </div>
