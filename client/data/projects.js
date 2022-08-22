@@ -30,7 +30,7 @@ export default [
     title: 'World of Single Origin Coffee',
     subtitle: 'Personal Project',
     paragraphs: [
-      'My personal project where I practiced (and still practice) building a full-stack react-redux app. The finished product should be an app, where you can select your favourte coffee tastenotes and get a coffee beans recommendation based on your selection. It does not look pretty yet but the functionality is there :-).',
+      'My personal project where I practiced (and still practice) building a full-stack react-redux app. The finished product should be an app, where you can select your favourite coffee taste notes and get a coffee beans recommendation based on your selection. It does not look pretty yet but the functionality is there :-).',
       'You can also add, edit and delete (CRUD) coffee beans. My goal is to implement auth0 so that only the site admin gets to see those forms. As of now I am only using a simple database and an internal API. As I keep building, I want to consume an external API to get my coffee data.',
     ],
     link: 'https://github.com/mako-goblin-2022/personal-project-daniela',
