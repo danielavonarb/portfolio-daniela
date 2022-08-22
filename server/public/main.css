@@ -206,19 +206,6 @@ header{
     transform: translateX(0); 
 }
 
-/* .nav-open-nav{
-  position: fixed;
-  background: var(--clr-dark);
-  color: var(--clr-light);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  transform: translateX(0);
-  transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
-
-} */
 
 .non_sticky{
 
@@ -229,18 +216,6 @@ header{
 .nav-open .nav-toggle {
     position: fixed;
 }
-/* 
-.nav-open-toggle{
-  padding: .5em;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  position:fixed;
-  right: 1em;
-  top: 1em;
-  z-index: 1000;
-
-} */
 
 .nav-open .hamburger {
     transform: rotate(.625turn);
@@ -253,7 +228,6 @@ header{
 .nav-open .hamburger::after {
     opacity: 0;
 }
-
 
 
 .hamburger {
@@ -330,7 +304,7 @@ header{
      
 
   }
-
+/* 
   .intro__img__link:focus {
     position: relative;
     z-index: 2;
@@ -341,7 +315,7 @@ header{
 .intro__img__link:focus {
     transform: scale(1.2);
     opacity: .5;
-}
+} */
     
     .section__subtitle--intro {
         align-self: start;
@@ -548,14 +522,25 @@ header{
 #indiv_portfolio_img{
     width: 250px;
     height: 250px;
+    object-fit: contain;
+}
+
+.project-link{
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+
+.project-link:hover {
+    opacity: .7;
+    text-decoration: underline;
 }
 
 /* Carousel styles */
 
 .carousel{
     position: relative;
-    background: #16e0bd;
-    height: 600px;
+    /* background: #16e0bd; */
+    height: 550px;
 
 }
 
@@ -570,7 +555,7 @@ header{
     position: absolute;
     top: 0;
     bottom: 0;
-    object-fit: cover;
+    object-fit: contain;
     box-shadow: var(--bs);
 
 }
@@ -587,6 +572,27 @@ header{
     top: 50%;
     transform: translateY(-50%);
     right: -60px;
+}
+
+.back-btn {
+  text-align: center;
+  padding: .5em 2.5em;
+  margin: 50em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+
+
+}
+
+.back-btn:hover {
+  transform: scale(1.1);
 }
 
 /************ Animation Styles ************/

@@ -28,9 +28,9 @@ function clickHandlerNext(){
   return (
     <>
     <section className = "intro">
-      <h1 className ="section__title section__title--intro"><a href={project.link}>{project.title}</a></h1>
+      <h1 className ="section__title section__title--intro"><a className="project-link" target="_blank" href={project.link}><strong>{project.title}</strong></a></h1>
       <p className = "section__subtitle section__subtitle--intro">{project.subtitle}</p>
-      <a className='intro__img__link' href={project.link}><img src={"../images/" + project.image} className = "intro__img" id = "indiv_portfolio_img" alt = ""></img></a>
+      <a className='intro__img__link' target="_blank" href={project.link}><img src={"../images/" + project.image} className = "intro__img" id = "indiv_portfolio_img" alt = ""></img></a>
     </section>
 
     <div className="portfolio-item-individual">
@@ -47,8 +47,9 @@ function clickHandlerNext(){
         </div>
         <button onClick={clickHandlerNext} className = "carousel__button--next">Next</button>
       </div>
+        {/* <a href = "/#work" className = "back-btn">Back</a> */}
+      </div>
 
-    </div>
     </>
   )
 }
