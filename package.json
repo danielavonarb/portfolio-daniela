@@ -13,6 +13,7 @@
     "dev:server": "nodemon server",
     "start": "node server",
     "build": "npm run webpack",
+    "deploy": "aws s3 sync ./server/public/ s3://portfolio-daniela-bucket",
     "server": "node server",
     "test": "jest",
     "test:watch": "jest --watchAll",
