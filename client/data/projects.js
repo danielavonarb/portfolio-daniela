@@ -4,7 +4,7 @@ export default [
     image: 'portfolio-08.jpg',
     images: ['rova.png'],
     title: 'ROVA Coaching',
-    subtitle: 'My first "real-life" project',
+    subtitle: 'First "real-world" project',
     paragraphs: [
       'This is my first real project where I worked with a customer. I gained my first AWS cloud experience while working on this project. I used the following AWS services: Route53 | S3 | CloudFront',
     ],
@@ -38,7 +38,7 @@ export default [
       'coffee-04.png',
       'coffee-05.png',
     ],
-    title: 'World of Single Origin Coffee',
+    title: 'World of Coffee Beans',
     subtitle: 'Personal Dev Academy Project',
     paragraphs: [
       'My personal project where I practiced (and still practice) building a full-stack react-redux app. The finished product should be an app, where you can select your favourite coffee taste notes and get a coffee beans recommendation based on your selection. It does not look pretty yet but the functionality is there :-).',

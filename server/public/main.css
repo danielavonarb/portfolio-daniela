@@ -28,7 +28,7 @@
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -37,6 +37,7 @@
         --fs-h5: 0.8rem;
         --fs-body: 1.125rem;
     }
+
 }
 
 /* General styles */
@@ -335,6 +336,7 @@ header{
         width: calc(100% + 1.5em);
 
     }
+
 }
 
 .my-services{
@@ -375,7 +377,7 @@ header{
   
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     .services {
         display: flex;
         max-width: 1000px;
@@ -531,12 +533,12 @@ header{
     margin: 0 auto;
 }
 
-.portfolio-item-individual-link {
+/* .portfolio-item-individual-link {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 
-}
+} */
 
 .portfolio-item-individual p {
     max-width: 600px;
@@ -565,38 +567,43 @@ header{
 .carousel{
     position: relative;
     /* background: #16e0bd; */
-    height: 550px;
+    /* height: 550px; */
 
 }
 
 .carousel__track-container{
-    height: 100%;
+    /* height: 100%; */
     position: relative;
 }
 
 .carousel__track__slide{
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    /* position: absolute;
     top: 0;
     bottom: 0;
-    object-fit: contain;
+    object-fit: contain; */
     box-shadow: var(--bs);
 
+}
+
+.carousel__track__slide{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel__button--prev{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -60px;
+    left: +10px;
+    z-index: 2;
 }
 
 .carousel__button--next{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: -60px;
+    right: +10px;
+    z-index: 2;
 }
 
 /************ Animation Styles ************/
