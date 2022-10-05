@@ -13,8 +13,12 @@ function Work(props){
       <div className="portfolio">
         {projectsData.map((project) => {
           return (
+            <div>
+              <h4 className='project-title'>{project.title}</h4>
+              <h5 className='project-subtitle'>{project.subtitle}</h5>
             <div className='portfolio__item' key={project.id}>
               <Link to={`/projects/${project.id}`}><img className='portfolio__img' src={"../images/" + project.image}/></Link>
+            </div>
             </div>
           )
         })}
