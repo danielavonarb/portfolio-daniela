@@ -1,6 +1,17 @@
 export default [
   {
     id: 1,
+    image: 'portfolio-08.jpg',
+    images: ['rova.png'],
+    title: 'ROVA Coaching',
+    subtitle: 'My first "real-life" project',
+    paragraphs: [
+      'This is my first real project where I worked with a customer. I gained my first AWS cloud experience while working on this project. I used the following AWS services: Route53 | S3 | CloudFront',
+    ],
+    link: 'https://rova-coaching.ch/',
+  },
+  {
+    id: 2,
     image: 'portfolio-01.jpg',
     images: [
       'bookexchange.png',
@@ -18,7 +29,7 @@ export default [
     link: 'https://the-book-exchange-mako.herokuapp.com/',
   },
   {
-    id: 2,
+    id: 3,
     image: 'portfolio-02.jpg',
     images: [
       'coffee-01.png',
@@ -28,7 +39,7 @@ export default [
       'coffee-05.png',
     ],
     title: 'World of Single Origin Coffee',
-    subtitle: 'Personal Project',
+    subtitle: 'Personal Dev Academy Project',
     paragraphs: [
       'My personal project where I practiced (and still practice) building a full-stack react-redux app. The finished product should be an app, where you can select your favourite coffee taste notes and get a coffee beans recommendation based on your selection. It does not look pretty yet but the functionality is there :-).',
       'You can also add, edit and delete (CRUD) coffee beans. My goal is to implement auth0 so that only the site admin gets to see those forms. As of now I am only using a simple database and an internal API. As I keep building, I want to consume an external API to get my coffee data.',
@@ -36,7 +47,7 @@ export default [
     link: 'https://github.com/mako-goblin-2022/personal-project-daniela',
   },
   {
-    id: 3,
+    id: 4,
     image: 'portfolio-03.jpg',
     images: ['sparkles-01.png', 'sparkles-02.png'],
     title: 'Sparkle Canvas',
@@ -47,7 +58,7 @@ export default [
     link: 'https://sparkle-canvas.herokuapp.com/',
   },
   {
-    id: 4,
+    id: 5,
     image: 'portfolio-04.jpg',
     images: ['blog-01.png', 'blog-02.png', 'blog-03.png', 'blog-04.png'],
     title: 'My Blog Page',
